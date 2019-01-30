@@ -21,25 +21,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTb-xj-cnW">
-                                <rect key="frame" x="145" y="293" width="79" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTb-xj-cnW">
+                                <rect key="frame" x="109" y="346" width="156" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oc-9B-0Iu">
-                                <rect key="frame" x="104" y="454" width="131" height="98"/>
+                                <rect key="frame" x="109" y="473" width="147" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="changeCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXu-ho-Zp0"/>
                                     <action selector="changeMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0hS-fa-p8x"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cat" translatesAutoresizingMaskIntoConstraints="NO" id="5Pd-xN-KKo">
+                                <rect key="frame" x="67" y="38" width="240" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat2" translatesAutoresizingMaskIntoConstraints="NO" id="CK1-yb-DdF">
+                                <rect key="frame" x="67" y="38" width="240" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="cat" destination="5Pd-xN-KKo" id="92V-Sy-BMb"/>
+                        <outlet property="cat2" destination="CK1-yb-DdF" id="4II-5q-Utd"/>
                         <outlet property="label" destination="wTb-xj-cnW" id="syz-rL-iWD"/>
                     </connections>
                 </viewController>
@@ -48,4 +59,8 @@
             <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cat" width="426" height="470"/>
+        <image name="cat2" width="426" height="470"/>
+    </resources>
 </document>

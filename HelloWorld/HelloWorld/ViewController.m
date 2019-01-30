@@ -13,7 +13,9 @@
 @end
 
 @implementation ViewController
-@synthesize label, button;
+@synthesize label, button, cat, cat2;
+
+int even = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +24,23 @@
 
 -(IBAction)changeMessage:(id)sender
 {
-    [label setText:@"Changed the text"];
+    [label setText:@"Wow he dances!"];
+    
+}
+
+-(IBAction)changeCat:(id)sender
+{
+    if(even % 2 == 0)
+    {
+        cat.hidden = YES;
+        cat2.hidden = NO;
+    }
+    else
+    {
+        cat.hidden = NO;
+        cat2.hidden = YES;
+    }
+    even++;
 }
 
 

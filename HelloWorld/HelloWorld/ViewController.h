@@ -11,6 +11,8 @@
 @interface ViewController : UIViewController
 @property (nonatomic, strong) IBOutlet UILabel *label;
 @property (nonatomic, strong) IBOutlet UILabel *button;
+@property (nonatomic, strong) IBOutlet UIImageView *cat;
+@property (nonatomic, strong) IBOutlet UIImageView *cat2;
 
 @end
 
