@@ -18,6 +18,30 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        int[][] arr2048 = new int[3][3];
+        for(int i =0;i < 3;i++)
+        {
+            for(int j = 0; j < 3; j++)
+            {
+                arr2048[0][1] = 2;
+            }
+        }
+saflks
+        fdslfdlf;savedInstanceStatedsfdf
+                savedInstanceStatedsfdffd
+                savedInstanceStatedsfdffdd
+                        d
+                        fdslfdlffew
+                                r
+                                getDrawerToggleDelegate()ewr
+            ewr
+                wer
+                        wer
+                        ewr
+                                we
+                                rwe
+
+                                        
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
