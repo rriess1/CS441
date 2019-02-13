@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        int[][] arr2048 = new int[3][3];
-        for(int i =0;i < 3;i++)
+        int[][] arr2048 = new int[4][4];
+        for(int i =0;i < 4;i++)
         {
-            for(int j = 0; j < 3; j++)
+            for(int j = 0; j < 4; j++)
             {
                 arr2048[i][j] = -1;
             }
@@ -39,29 +39,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public int[][] moveUp(int[][] arr){
-        for(int i = 0 ; i < 3; i++)
-        {
-            if(arr[0][0] == arr[0][1])
-            {
-                arr[0][0] =  arr[0][0] +  arr[0][1];
-            }
-            else if(arr[1][0] == arr[1][1])
-            {
-                arr[1][0] =  arr[1][0] +  arr[1][1];
-            }
-            else if(arr[2][0] == arr[2][1])
-            {
-                arr[2][0] =  arr[2][0] +  arr[2][1];
-            }
-        }
+
         return arr;
     }
 
     public int[][] moveDown(int[][] arr){
-        for(int i = 0 ; i < 3; i++)
-        {
 
-        }
         return arr;
     }
 
@@ -69,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 0 ; i < 3; i++)
         {
 
-        }
+
         return arr;
     }
 
